@@ -8,6 +8,18 @@ function App() {
         <div className="custom-name">
           Srijan Suresh
         </div>
+        <h2 className="custom-text">  
+          Student At University of Illinois at Chicago <br></br>
+          and Former Software Engineer Intern at ACT
+        </h2>
+        <div className="button-container">
+          <button>
+            <div className="custom-text">PROJECTS</div>
+            </button>
+          <button>
+            <div className = "custom-text">ABOUT ME</div>
+            </button>
+        </div>
       </header>
     </div>
   );
