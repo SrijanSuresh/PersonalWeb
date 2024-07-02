@@ -22,7 +22,17 @@ function App() {
         </div>
       </header>
       <body>
-        About me
+      <div className="about-tile">About Me</div>
+        <p className="about-me">
+          Hello! I'm Srijan Suresh, a tech enthusiast who also dabbles in the art of vanquishing virtual dragons and cowboys.
+          When I'm not busy exploring the lands of Elden Ring or Red Dead Redemption 2, I enjoy kicking a soccer ball around, rooting for the golden days of FC Barcelona and Manchester United.<br></br><br></br>
+        
+          On the strategic side, I’m a 1700-rated chess player, regularly battling on the 64 squares.
+          I’ve interned at ACT, where I wrangled student test score data with Tableau and gave the website a fresh new look.
+          Currently, my brain is buzzing with personal projects like finding carpool buddies using Dijkstra’s algorithm and predicting stock prices with a touch of Monte Carlo magic.
+          I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
+        </p>
+
       </body>
     </div>
   );
