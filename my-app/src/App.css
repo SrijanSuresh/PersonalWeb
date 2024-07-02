@@ -1,3 +1,9 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #090909;
+  height: 100%;
+}
 .App-header {
   background-color: #090909;
   min-height: 100vh;
@@ -14,13 +20,17 @@
   color: #61dafb;
 }
 
+.about-section{
+  background-color: #090909;
+}
 .about-tile {
   font-family: 'Arial', sans-serif;
-  font-size: 2.5em; /* Adjust as needed */
+  font-size: 3.5em; /* Adjust as needed */
   color: #ffffff;
   animation: slideIn 1s forwards;  
   margin-top: 50px;
-  text-align: center;
+  margin: 20px ;
+  text-align: left;
   background: radial-gradient(circle, rgb(255, 47, 0) 0%, rgb(255, 0, 0) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -32,11 +42,15 @@
 
 .about-me {
   font-family: 'Arial', sans-serif;
-  font-size: 1.2em; /* Adjust as needed */
-  color: #121111;
+  font-size: 1.5em; /* Adjust as needed */
+  color: #ffffff;
   animation: slideIn 1s forwards; 
-  margin: 20px auto;
-  
+
+  -webkit-background-clip: text;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 5px rgba(72, 0, 255, 0.7), 
+               0 0 5px rgba(6, 0, 0, 0.5), 
+               0 0 15px rgba(0, 0, 0, 0.3);
   max-width: 800px;
   line-height: 1.5;
   text-align: left;
@@ -122,3 +136,32 @@ button:hover {
   border-style: solid;
   transform: scale(1.1);
 }
+
+
+button:first-of-type {
+  animation-delay: 0.5s;
+}
+
+button:last-of-type {
+  animation-delay: 1s;
+}
+
+  
+.back-button {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+  color: rgb(15, 15, 15);
+  border: none;
+  padding: 10px 50px;
+  margin: 20px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  transition: background 0.3s, transform 0.3s;
+  opacity: 0;
+  animation: slideIn 1s forwards;
+}
+
+
