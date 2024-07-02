@@ -36,9 +36,10 @@
   color: #121111;
   animation: slideIn 1s forwards; 
   margin: 20px auto;
+  
   max-width: 800px;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   padding: 0 20px;
 }
 
