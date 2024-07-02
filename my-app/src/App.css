@@ -7,6 +7,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
@@ -15,7 +16,7 @@
 
 .custom-name {
   font-family: 'Arial', sans-serif;
-  font-size: 3em; /* Adjust as needed */
+  font-size: 2.5em; /* Adjust as needed */
   background: rgb(172,245,255);
   background: radial-gradient(circle, rgba(172,245,255,1) 0%, rgba(95,52,255,1) 100%);
   -webkit-background-clip: text;
@@ -27,11 +28,12 @@
                0 0 15px rgba(10, 30, 250, 0.3);
   padding: 10px 20px;
   margin-top: 20px;
+  animation: slideIn 1s forwards;
 }
 
 .custom-text {
   font-family: 'Arial', sans-serif;
-  font-size: 1em; /* Adjust as needed */
+  font-size: .75em; /* Adjust as needed */
   background: rgb(172,245,255);
   background: radial-gradient(circle, rgba(172,245,255,1) 0%, rgb(52, 255, 140) 100%);
   -webkit-background-clip: text;
@@ -43,21 +45,35 @@
                0 0 15px rgba(10, 30, 250, 0.3);
   padding: 10px 20px;
   margin-top: 20px; 
+  animation: slideIn 1s forwards;
 }
 
 .button-container {
   display: flex;
   justify-content: left;
   margin-top: 20px;
+  animation: slideIn 1s forwards;
+
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 button {
   font-family: 'Arial', sans-serif;
   font-size: 1em; /* Adjust as needed */
   background: radial-gradient(circle, rgb(8, 8, 8) 0%, rgb(10, 10, 10) 100%);
-  color: rgb(14, 13, 13);
-  border: none;
-  padding: 1px 100px;
+  color: rgb(255, 252, 252);
+  border: white;
+  border-style: solid;
+  padding: 20px 50px;
   margin: 0 10px;
   cursor: pointer;
   text-transform: uppercase;
@@ -69,6 +85,9 @@ button {
 }
 
 button:hover {
-  background: radial-gradient(circle, rgb(7, 7, 7) 0%, rgba(172,245,255,1) 100%);
+  background: radial-gradient(circle, rgb(255, 1, 1) 0%, rgb(255, 0, 0) 100%);
+  color: #fffafa;
+  border: black;
+  border-style: solid;
   transform: scale(1.1);
 }

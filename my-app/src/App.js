@@ -14,13 +14,16 @@ function App() {
         </h2>
         <div className="button-container">
           <button>
-            <div className="custom-text">PROJECTS</div>
-            </button>
+            PROJECTS
+          </button>
           <button>
-            <div className = "custom-text">ABOUT ME</div>
-            </button>
+          ABOUT ME
+          </button>
         </div>
       </header>
+      <body>
+        About me
+      </body>
     </div>
   );
 }
