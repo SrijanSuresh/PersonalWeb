@@ -30,7 +30,9 @@ function App() {
         <div className="about-section">
           <button className="back-button" onClick={() => setView('home')}>Back</button>
           <div className="about-tile">About Me</div>
+          
           <p className="about-me">
+            
             Hello! I'm Srijan Suresh, a tech enthusiast who also dabbles in the art of vanquishing virtual dragons and cowboys.
             When I'm not busy exploring the lands of Elden Ring or Red Dead Redemption 2, I enjoy kicking a soccer ball around, rooting for the golden days of FC Barcelona and Manchester United.<br></br><br></br>
         

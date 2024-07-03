@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
 body, html {
   margin: 0;
   padding: 0;
@@ -22,9 +24,10 @@ body, html {
 
 .about-section{
   background-color: #090909;
+
 }
 .about-tile {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Fira Code', monospace;
   font-size: 3.5em; /* Adjust as needed */
   color: #ffffff;
   animation: slideIn 1s forwards;  
@@ -38,11 +41,12 @@ body, html {
   text-shadow: 0 0 5px rgba(255, 0, 0, 0.7), 
                0 0 5px rgba(255, 0, 0, 0.5), 
                0 0 15px rgba(0, 0, 0, 0.3);
+               
 }
 
 .about-me {
-  font-family: 'Arial', sans-serif;
-  font-size: 1.5em; /* Adjust as needed */
+  font-family: 'Fira Code', monospace;
+  font-size: 1.25em; /* Adjust as needed */
   color: #ffffff;
   animation: slideIn 1s forwards; 
 
@@ -55,37 +59,42 @@ body, html {
   line-height: 1.5;
   text-align: left;
   padding: 0 20px;
+  white-space: pre-wrap; /* Preserve white spaces for typewriter effect */
+  border-right: 2px solid #ffffff; /* Cursor effect */
+  overflow: hidden; /* Hide overflow for typing effect */
+  animation: typing 4s steps(50, end), blink-caret 0.75s step-end infinite;
+
 }
 
 
 
 .custom-name {
-  font-family: 'Arial', sans-serif;
-  font-size: 2.5em; /* Adjust as needed */
+  font-family: 'Fira Code', monospace;
+  font-size: 3.5em; /* Adjust as needed */
   background: rgb(172,245,255);
   background: radial-gradient(circle, rgba(172,245,255,1) 0%, rgba(95,52,255,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  text-shadow: 0 0 5px rgba(165, 151, 213, 0.7), 
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 
                0 0 10px rgba(255, 253, 253, 0.5), 
                0 0 15px rgba(10, 30, 250, 0.3);
   padding: 10px 20px;
   margin-top: 20px;
-  animation: slideIn 1s forwards;
+  animation: slideIn 2s forwards;
 }
 
 .custom-text {
-  font-family: 'Arial', sans-serif;
-  font-size: .75em; /* Adjust as needed */
+  font-family: 'Fira Code', monospace;
+  font-size: 1em; /* Adjust as needed */
   background: rgb(172,245,255);
   background: radial-gradient(circle, rgba(172,245,255,1) 0%, rgb(52, 255, 140) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  text-shadow: 0 0 5px rgba(165, 151, 213, 0.7), 
+  text-shadow: 0 0 5px rgba(60, 0, 255, 0.7), 
                0 0 10px rgba(255, 253, 253, 0.5), 
                0 0 15px rgba(10, 30, 250, 0.3);
   padding: 10px 20px;
@@ -111,6 +120,17 @@ body, html {
   }
 }
 
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #ffffff; }
+}
+
+
 button {
   font-family: 'Arial', sans-serif;
   font-size: 1em; /* Adjust as needed */
@@ -118,7 +138,7 @@ button {
   color: rgb(255, 252, 252);
   border: white;
   border-style: solid;
-  padding: 20px 50px;
+  padding: 20px 90px;
   margin: 0 10px;
   cursor: pointer;
   text-transform: uppercase;
@@ -143,7 +163,7 @@ button:first-of-type {
 }
 
 button:last-of-type {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
   
