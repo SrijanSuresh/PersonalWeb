@@ -45,6 +45,7 @@ body, html {
 }
 
 .about-me {
+  
   font-family: 'Fira Code', monospace;
   font-size: 1.25em; /* Adjust as needed */
   color: #ffffff;
@@ -60,9 +61,6 @@ body, html {
   text-align: left;
   padding: 0 20px;
   white-space: pre-wrap; /* Preserve white spaces for typewriter effect */
-  border-right: 2px solid #ffffff; /* Cursor effect */
-  overflow: hidden; /* Hide overflow for typing effect */
-  animation: typing 4s steps(50, end), blink-caret 0.75s step-end infinite;
 
 }
 
@@ -119,17 +117,6 @@ body, html {
     opacity: 1;
   }
 }
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: #ffffff; }
-}
-
 
 button {
   font-family: 'Arial', sans-serif;
