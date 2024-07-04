@@ -78,6 +78,8 @@ function App() {
               <div className="resume-content">
                 <p className="resume-text">
                   {/* Your digital resume content goes here */}
+                  EDUCATION: UNIVERSITY OF ILLINOIS AT CHICAGO<br></br>
+                  SKILLS: JAVA, C++, C, PYTHON, JAVASCRIPT
                 </p>
               </div>
           </div>
