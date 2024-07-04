@@ -56,23 +56,24 @@ function App() {
                 Currently, my brain is buzzing with personal projects like finding carpool buddies using Dijkstra’s algorithm and predicting stock prices with a touch of Monte Carlo magic.
                 I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
               </p>
+              <div className="badge-container">
+                <div className="badge-base LI-profile-badge"
+                  data-locale="en_US"
+                  data-size="large"
+                  data-theme="light"
+                  data-type="HORIZONTAL"
+                  data-vanity="srijan-suresh"
+                  data-version="v1">
+                  <a className="badge-base__link LI-simple-link"
+                    href="https://www.linkedin.com/in/srijan-suresh?trk=profile-badge">
+                    Srijan Suresh
+                  </a>
+                </div>
+              </div>
             </div>
             
             {/* LinkedIn profile badge */}
-            <div className="badge-container">
-              <div className="badge-base LI-profile-badge"
-                data-locale="en_US"
-                data-size="large"
-                data-theme="light"
-                data-type="HORIZONTAL"
-                data-vanity="srijan-suresh"
-                data-version="v1">
-                <a className="badge-base__link LI-simple-link"
-                  href="https://www.linkedin.com/in/srijan-suresh?trk=profile-badge">
-                  Srijan Suresh
-                </a>
-              </div>
-            </div>
+
             <div className="resume-section">
             <div className="resume-tile">Digital Resume</div>
               <div className="resume-content">
