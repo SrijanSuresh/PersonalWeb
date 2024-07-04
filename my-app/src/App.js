@@ -41,6 +41,7 @@ function App() {
       )}
 
       {view === 'about' && (
+        
         <div className="about-section">
           <button className="back-button" onClick={() => setView('home')}>Back</button>
           <div className="about-content">
@@ -72,8 +73,21 @@ function App() {
                 </a>
               </div>
             </div>
+            <div className="resume-section">
+            <div className="resume-tile">Digital Resume</div>
+              <div className="resume-content">
+                <p className="resume-text">
+                  {/* Your digital resume content goes here */}
+                </p>
+              </div>
           </div>
+          </div>
+
+
         </div>
+
+
+        
       )}
 
       {view === 'projects' && (

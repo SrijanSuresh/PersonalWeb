@@ -43,6 +43,51 @@ body, html {
                0 0 15px rgba(0, 0, 0, 0.3);
                
 }
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #090909;
+  color: white;
+  min-height: 100vh;
+}
+
+.resume-tile {
+  font-family: 'Fira Code', monospace;
+  font-size: 3.5em;
+  color: #ffffff;
+  animation: slideIn 1s forwards;
+  margin-top: 50px;
+  text-align: center;
+  background: radial-gradient(circle, rgb(13, 255, 0) 0%, rgb(0, 255, 21) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 5px rgba(0, 255, 30, 0.7),
+               0 0 5px rgba(0, 255, 4, 0.5),
+               0 0 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.resume-content {
+  font-family: 'Fira Code', monospace;
+  font-size: 1em;
+  color: #ffffff;
+  animation: slideIn 1s forwards;
+  text-align: left;
+  padding: 20px;
+  width: 80%;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.resume-text {
+  white-space: pre-wrap; /* Preserve white spaces for typewriter effect */
+  line-height: 1.5;
+}
 
 .about-me {
   
