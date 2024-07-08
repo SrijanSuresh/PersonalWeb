@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { DiCode } from "react-icons/di";
-
+import uicl from "./explogo/uicl.png"
 
 import './App.css';
 
@@ -72,8 +72,8 @@ function App() {
                       Phone: 319-259-2055<br />
                       Email: srijansuresh04@gmail.com<br /><br />
 
-                    <span className="resume-section-title">Education</span><br />
-                    <div className = 'resume-subtitle'><tab>         </tab>University of Illinois at Chicago, <br/><tab>         </tab>Chicago, IL<br />
+                    <span className="resume-section-title">Education</span><br /><tab style={{ paddingLeft: '100px',fontSize:'30px' }}>University of Illinois at Chicago<br/></tab>
+                    <tab>         </tab><img src={uicl} alt='uiclogo' height={200}/><div className = 'resume-subtitle'><tab>         </tab>Chicago, IL<br />
                     <tab>         </tab>Bachelor of Science in Computer Science (Software Engineering Concentration)<br />
                     <tab>         </tab>August 2023 – December 2025<br /></div>
                     <tab>           </tab>• Dean’s List<br />
