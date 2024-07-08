@@ -85,28 +85,32 @@ function App() {
             Email: srijansuresh04@gmail.com<br /><br />
 
             <span className="resume-section-title">Education</span><br />
-              University of Illinois at Chicago, Chicago, IL<br />
-              Bachelor of Science in Computer Science (Software Engineering Concentration)<br />
-              August 2023 – December 2025<br />
-              • Dean’s List<br />
-              • Relevant Coursework: Data Structures, Databases, Computer Algorithms, Language and Automation,
-              Applied Statistical Methods, Linear Algebra<br /><br />
+            <div className = 'resume-subtitle'><tab>         </tab>University of Illinois at Chicago, <br/><tab>         </tab>Chicago, IL<br />
+            <tab>         </tab>Bachelor of Science in Computer Science (Software Engineering Concentration)<br />
+            <tab>         </tab>August 2023 – December 2025<br /></div>
+            <tab>           </tab>• Dean’s List<br />
+            <tab>           </tab>• Relevant Coursework: Data Structures, Databases, Computer Algorithms, Language and Automation,
+            Applied <br/><tab>             </tab>Statistical Methods, Linear Algebra<br /><br />
 
             <span className="resume-section-title">Skills</span><br />
-              Technical Skills: C/C++, Python, Java, JavaScript, R, Unix/Linux, HTML, CSS, LATEX<br />
-              Database: PostgreSQL, MySQL, SQLite, NoSQL, Google Firebase<br />
-              Frameworks and Libraries: React, Node, Express, Flask, TensorFlow, Pandas, NumPy<br /><br />
+            <div className = 'resume-subtitle'><tab>         </tab>Technical Skills:</div> 
+            <tab>         </tab>C/C++, Python, Java, JavaScript, R, Unix/Linux, HTML, CSS, LATEX<br />
+            <div className = 'resume-subtitle'><tab>         </tab>Database:</div> 
+            <tab>         </tab>PostgreSQL, MySQL, SQLite, NoSQL, Google Firebase<br />
+            <div className = 'resume-subtitle'><tab>         </tab>Frameworks and Libraries: </div>
+            <tab>         </tab>React, Node, Express, Flask, TensorFlow, Pandas, NumPy<br /><br />
 
             <span className="resume-section-title">Work Experience</span><br />
-              <div resume></div>ACT Software Engineer Intern, Quality Assurance Engineer<br />
-              Iowa City, IA June 2022 – August 2022<br />
-              • Redesigned the test Score admin page UI/UX and backend, restructuring data accuracy by 25% and decreased
-              administrative processing time.<br />
-              • Utilized Tableau to create interactive and visually appealing dashboards to analyze test score data, identify
-              trends, and present insights to stakeholders.<br />
-              • Refined and executed robust test automation using PyTest.<br />
-              • Launched Tableau to monitor test process performance such as test execution times, defect resolution rates,
-              and test coverage metrics to optimize efficiency and effectiveness.<br /><br />
+              <div className = 'resume-subtitle'>      ACT Software Engineer Intern, Quality Assurance Engineer<br />
+              <tab>         </tab>Iowa City, IA June 2022 – August 2022<br /></div>
+              
+              <tab>         </tab>• Redesigned the test Score admin page UI/UX and backend, restructuring data accuracy by 25% and decreased
+              <br /><tab>           </tab>administrative processing time.<br />
+              <tab>         </tab>• Utilized Tableau to create interactive and visually appealing dashboards to analyze test score data, identify
+              <br /><tab>           </tab>trends, and present insights to stakeholders.<br />
+              <tab>         </tab>• Refined and executed robust test automation using PyTest.<br />
+              <tab>         </tab>• Launched Tableau to monitor test process performance such as test execution times, defect resolution rates,
+              and <br /><tab>           </tab>test coverage metrics to optimize efficiency and effectiveness.<br /><br />
 
             <span className="resume-section-title">Personal Projects</span><br />
               <div className='resume-subtitle'>     CarConnect (April 2024)<br /></div>
@@ -149,7 +153,28 @@ function App() {
           <div className="projects-tile">Projects</div>
           <p className="projects-content">
             {/* Add your project content here */}
-            Coming soon...
+            <div className="project-card">
+          <h2>CarConnect</h2>
+          <p>
+            A web application that allows users to connect rides with other users in a car share. Utilizes Dijkstra’s shortest route algorithm to find the nearest user client, improving efficiency by approximately 40%.
+          </p>
+          <a href="https://github.com/SrijanSuresh/CarConnect" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </div>
+        <div className="project-card">
+          <h2>SpaceRides</h2>
+          <p>
+            A robust carpooling website developed in collaboration with 4 people in 24 hours. Integrated Google Maps API/Leaflet for accurate location tracking and optimized route planning for users.
+          </p>
+          <a href="https://github.com/SrijanSuresh/SpaceRides" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </div>
+        <div className="project-card">
+          <h2>Search Algorithm</h2>
+          <p>
+            A data scraping search algorithm programmed in C++, with several built-in class functions. Created several test suites using Google Test Suite and increased efficiency by identifying slow searches.
+          </p>
+          <a href="https://github.com/SrijanSuresh/SearchAlgorithm" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </div>
+          
           </p>
         </div>
       )}
