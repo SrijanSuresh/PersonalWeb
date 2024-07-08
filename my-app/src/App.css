@@ -97,6 +97,12 @@ body, html {
   flex-direction: row;
   justify-content: right;
 }
+.resume-section-title{
+  color:  blue;
+  text-shadow: 0 0 5px rgba(2, 2, 2, 0.7),
+  0 0 5px rgba(255, 255, 255, 0.5),
+  0 0 15px rgba(0, 0, 0, 0.3);
+}
 .resume-content {
   font-family: 'Fira Code', monospace;
   font-size: 1em;
@@ -107,13 +113,21 @@ body, html {
   width: 80%;
   border: 2px solid #ffffff;
   border-radius: 10px;
-  background-color: rgba(1, 39, 21, 0.5);
+  background-color: rgba(0, 10, 8, 0.5);
   margin-top: 20px;
 }
-
+.resume-subtitle{
+  color:rgb(255, 0, 0) ;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7),
+  0 0 5px rgba(0, 0, 0, 0.5),
+  0 0 15px rgba(0, 0, 0, 0.3);
+}
 .resume-text {
   white-space: pre-wrap; /* Preserve white spaces for typewriter effect */
-  color:orangered ;
+  color:rgb(255, 255, 255) ;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7),
+  0 0 5px rgba(255, 255, 255, 0.5),
+  0 0 15px rgba(255, 255, 255, 0.3);
   line-height: 1.5;
 }
 

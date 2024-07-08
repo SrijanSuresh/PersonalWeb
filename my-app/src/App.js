@@ -79,10 +79,60 @@ function App() {
               <div className="resume-content">
                 <p className="resume-text">
                   {/* Your digital resume content goes here */}
-                  EDUCATION: UNIVERSITY OF ILLINOIS AT CHICAGO<br></br>
-                  SKILLS: JAVA, C++, C, PYTHON, JAVASCRIPT
-                </p>
-              </div>
+                  <span className="resume-header">SRIJAN SURESH</span><br />
+            BUFFALO GROVE – IL<br />
+            Phone: 319-259-2055<br />
+            Email: srijansuresh04@gmail.com<br /><br />
+
+            <span className="resume-section-title">Education</span><br />
+              University of Illinois at Chicago, Chicago, IL<br />
+              Bachelor of Science in Computer Science (Software Engineering Concentration)<br />
+              August 2023 – December 2025<br />
+              • Dean’s List<br />
+              • Relevant Coursework: Data Structures, Databases, Computer Algorithms, Language and Automation,
+              Applied Statistical Methods, Linear Algebra<br /><br />
+
+            <span className="resume-section-title">Skills</span><br />
+              Technical Skills: C/C++, Python, Java, JavaScript, R, Unix/Linux, HTML, CSS, LATEX<br />
+              Database: PostgreSQL, MySQL, SQLite, NoSQL, Google Firebase<br />
+              Frameworks and Libraries: React, Node, Express, Flask, TensorFlow, Pandas, NumPy<br /><br />
+
+            <span className="resume-section-title">Work Experience</span><br />
+              <div resume></div>ACT Software Engineer Intern, Quality Assurance Engineer<br />
+              Iowa City, IA June 2022 – August 2022<br />
+              • Redesigned the test Score admin page UI/UX and backend, restructuring data accuracy by 25% and decreased
+              administrative processing time.<br />
+              • Utilized Tableau to create interactive and visually appealing dashboards to analyze test score data, identify
+              trends, and present insights to stakeholders.<br />
+              • Refined and executed robust test automation using PyTest.<br />
+              • Launched Tableau to monitor test process performance such as test execution times, defect resolution rates,
+              and test coverage metrics to optimize efficiency and effectiveness.<br /><br />
+
+            <span className="resume-section-title">Personal Projects</span><br />
+              <div className='resume-subtitle'>     CarConnect (April 2024)<br /></div>
+              <tab>         </tab>• Computed a web application that allows users to connect rides with other users in a car share.<br />
+              <tab>         </tab>• Performed Dijkstra’s shortest route algorithm to find nearest user client to connect car, improving efficiency
+              <br /><tab>           </tab>by approximately 40%.<br />
+              <tab>         </tab>• Designed and implemented a React-based front-end UI/UX for dynamic client-side rendering.<br />
+              <tab>         </tab>• Configured Node/Express server backend to manage routing and set up PostgreSQL to store user address
+              and details in <br /><tab>           </tab>database.<br />
+              <tab>         </tab>• Set up a NoSQL Google Firebase to handle user authentication.<br /><br />
+
+              <div className='resume-subtitle'>     SpaceRides (February 2024)<br /></div>
+              <tab>         </tab>• Developed a robust carpooling website in collaboration with 4 people in 24 hours.<br />
+              <tab>         </tab>• Integrated Google Maps API/Leaflet for accurate location tracking and optimized route planning for users.<br />
+              <tab>         </tab>• Programmed site using HTML, CSS, JavaScript and integrated REST API to retrieve user information
+              and process <br /><tab>           </tab>carpooling requests.<br />
+              <tab>         </tab>• Utilized PHP backend to handle user authentication, data storage, and interaction with the REST API,
+              to ensure <br /><tab>           </tab>seamless functionality and security of carpooling site.<br /><br />
+
+              <div className='resume-subtitle'>     Search Algorithm (January 2024)<br /></div>
+              <tab>         </tab>• Programmed a data scraping search algorithm using C++, with several built-in class functions.<br />
+              <tab>         </tab>• Created several test suites using Google Test Suite and increased efficiency by identifying slow searches.<br />
+              <tab>         </tab>• Developed algorithms to remove tokens, filter, and find query matches on 90+ tested articles.<br />
+              <tab>         </tab>• Analyzed key metrics such as precision, recall, and F1 score to assess search algorithm effectiveness.<br />
+              </p>
+            </div>
           </div>
           </div>
 
