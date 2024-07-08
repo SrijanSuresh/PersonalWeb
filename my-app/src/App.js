@@ -1,18 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { DiCode } from "react-icons/di";
 import uicl from "./explogo/uicl.png"
-/*Skills logo below*/
-import { FaJava } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaPython } from "react-icons/fa6";
-import { SiCplusplusbuilder } from "react-icons/si";
-import { FcLinux } from "react-icons/fc";
-import { FaHtml5 } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io5";
-
-
-
 import './App.css';
+import SkillsSection from './skillCard'; // Adjust the import path accordingly
+
 
 function App() {
   const [view, setView] = useState('home'); // State to manage the current view
@@ -53,61 +44,42 @@ function App() {
         </header>
       )}
 
-      {view === 'about' && (
-        
-          <div className="about-section">
-            
-            <div className="about-text">
-                <button className="back-button" onClick={() => setView('home')}>Back</button> 
-                <div className="about-me">
-                  <div className="about-tile">About Me</div>
-                  Hello! I'm Srijan Suresh, a tech enthusiast who also dabbles in the art of vanquishing virtual dragons and cowboys.
-                  When I'm not busy exploring the lands of Elden Ring or Red Dead Redemption 2, I enjoy kicking a soccer ball around, rooting for the golden days of FC Barcelona and Manchester United.<br></br><br></br>
+        {view === 'about' && (
+          
+            <div className="about-section">
               
-                  On the strategic side, I’m a 1700-rated chess player, regularly battling on the 64 squares.
-                  I’ve interned at ACT, where I wrangled student test score data with Tableau and gave the website a fresh new look.
-                  Currently, my brain is buzzing with personal projects like finding carpool buddies using Dijkstra’s algorithm and predicting stock prices with a touch of Monte Carlo magic.
-                  I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
+              <div className="about-text">
+                  <button className="back-button" onClick={() => setView('home')}>Back</button> 
+                  <div className="about-me">
+                    <div className="about-tile">About Me</div>
+                    Hello! I'm Srijan Suresh, a tech enthusiast who also dabbles in the art of vanquishing virtual dragons and cowboys.
+                    When I'm not busy exploring the lands of Elden Ring or Red Dead Redemption 2, I enjoy kicking a soccer ball around, rooting for the golden days of FC Barcelona and Manchester United.<br></br><br></br>
+                
+                    On the strategic side, I’m a 1700-rated chess player, regularly battling on the 64 squares.
+                    I’ve interned at ACT, where I wrangled student test score data with Tableau and gave the website a fresh new look.
+                    Currently, my brain is buzzing with personal projects like finding carpool buddies using Dijkstra’s algorithm and predicting stock prices with a touch of Monte Carlo magic.
+                    I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
 
-                </div>
-                <DiCode size="8em" color="#ffffff" />
-            </div>
-            <div className="resume-section">
-              <div className="resume-tile">Digital Resume</div>
-                <div className="resume-content">
-                  <p className="resume-text">
-                    {/* Your digital resume content goes here */}
-                    <span className="resume-header">SRIJAN SURESH</span><br />
-                      BUFFALO GROVE – IL<br />
-                      Phone: 319-259-2055<br />
-                      Email: srijansuresh04@gmail.com<br /><br />
+                  </div>
+                  <DiCode size="8em" color="#ffffff" />
+              </div>
+              <div className="resume-section">
+                <div className="resume-tile">DIGITAL RESUME</div>
+                  <div className="resume-content">
+                    <p className="resume-text">
+                      {/* Your digital resume content goes here */}
+                      <span className="resume-header">SRIJAN SURESH</span><br />
+                        BUFFALO GROVE – IL<br />
+                        Phone: 319-259-2055<br />
+                        Email: srijansuresh04@gmail.com<br /><br />
 
-                    <span className="resume-section-title">Education</span><br /><tab style={{ paddingLeft: '100px',fontSize:'30px' }}>University of Illinois at Chicago<br/></tab>
-                    <tab>         </tab><img src={uicl} alt='uiclogo' height={200}/><div className = 'resume-subtitle'><tab>         </tab>Chicago, IL<br />
-                    <tab>         </tab>Bachelor of Science in Computer Science (Software Engineering Concentration)<br />
-                    <tab>         </tab>August 2023 – December 2025<br /></div>
-                    <tab>           </tab>• Dean’s List<br />
-                    <tab>           </tab>• Relevant Coursework: Data Structures, Databases, Computer Algorithms, Language and Automation,
-                    Applied <br/><tab>             </tab>Statistical Methods, Linear Algebra<br /><br />
-
-                    <span className="resume-section-title">Skills</span><br />
-                    <div className = 'resume-subtitle'><tab>         </tab>Technical Skills:</div> 
-                    <tab>         </tab>
-                    <div className="skills-container">
-                      <div className="skill-card"><SiCplusplusbuilder size="5em" color="#FFFFFF" /></div>
-                      <div className="skill-card"><FaPython size="5em" color="#FFFF00" /></div>
-                      <div className="skill-card"><FaJava size="5em" color="#FF0000" /></div>
-                      <div className="skill-card"><IoLogoJavascript size="5em" color="#FFFF00" /></div>
-                      <div className="skill-card"><FcLinux size="5em" /></div>
-                      <div className="skill-card"><FaHtml5 size="5em" /></div>
-                      <div className="skill-card"><IoLogoCss3 size="5em" /></div>
-                    </div>
-
-                    <div className = 'resume-subtitle'><tab>         </tab>Database:</div> 
-                    <tab>         </tab>PostgreSQL, MySQL, SQLite, NoSQL, Google Firebase<br />
-                    <div className = 'resume-subtitle'><tab>         </tab>Frameworks and Libraries: </div>
-                    <tab>         </tab>React, Node, Express, Flask, TensorFlow, Pandas, NumPy<br /><br />
-
+                      <span className="resume-section-title">Education</span><br />
+                      {/* <tab style={{ paddingLeft: '100px',fontSize:'30px' }}>University of Illinois at Chicago<br/></tab> */}
+                      <img src={uicl} alt='uiclogo' height={10}/><br/>
+                      <span className="resume-section-title">Skills</span><br />
+                      <div className="skills-container">
+                        <SkillsSection />
+                      </div>
                     <span className="resume-section-title">Work Experience</span><br />
                       <div className = 'resume-subtitle'>      ACT Software Engineer Intern, Quality Assurance Engineer<br />
                       <tab>         </tab>Iowa City, IA June 2022 – August 2022<br /></div>
