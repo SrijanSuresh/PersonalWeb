@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { DiCode } from "react-icons/di";
 import uicl from "./explogo/uicl.png"
+/*Skills logo below*/
+import { FaJava } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaPython } from "react-icons/fa6";
+import { SiCplusplusbuilder } from "react-icons/si";
+import { FcLinux } from "react-icons/fc";
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io5";
+
+
 
 import './App.css';
 
@@ -82,7 +92,17 @@ function App() {
 
                     <span className="resume-section-title">Skills</span><br />
                     <div className = 'resume-subtitle'><tab>         </tab>Technical Skills:</div> 
-                    <tab>         </tab>C/C++, Python, Java, JavaScript, R, Unix/Linux, HTML, CSS, LATEX<br />
+                    <tab>         </tab>
+                    <div className="skills-container">
+                      <div className="skill-card"><SiCplusplusbuilder size="5em" color="#FFFFFF" /></div>
+                      <div className="skill-card"><FaPython size="5em" color="#FFFF00" /></div>
+                      <div className="skill-card"><FaJava size="5em" color="#FF0000" /></div>
+                      <div className="skill-card"><IoLogoJavascript size="5em" color="#FFFF00" /></div>
+                      <div className="skill-card"><FcLinux size="5em" /></div>
+                      <div className="skill-card"><FaHtml5 size="5em" /></div>
+                      <div className="skill-card"><IoLogoCss3 size="5em" /></div>
+                    </div>
+
                     <div className = 'resume-subtitle'><tab>         </tab>Database:</div> 
                     <tab>         </tab>PostgreSQL, MySQL, SQLite, NoSQL, Google Firebase<br />
                     <div className = 'resume-subtitle'><tab>         </tab>Frameworks and Libraries: </div>
