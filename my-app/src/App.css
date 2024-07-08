@@ -58,9 +58,9 @@ body, html {
                
 }
 .about-text{
-  height:800px;
+  height:850px;
+  width: fit-content;
 }
-
 .resume-section {
   display: flex;
   flex-direction: column;

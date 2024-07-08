@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { DiCode } from "react-icons/di";
 
 
 import './App.css';
@@ -59,6 +60,7 @@ function App() {
                   I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
 
                 </div>
+                <DiCode size="8em" color="#ffffff" />
             </div>
             <div className="resume-section">
               <div className="resume-tile">Digital Resume</div>
