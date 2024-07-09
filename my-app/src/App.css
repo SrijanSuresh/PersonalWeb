@@ -320,6 +320,12 @@ button:last-of-type {
   border-color: #3498db;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 } */
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -327,33 +333,63 @@ button:last-of-type {
   justify-content: center;
 }
 
+:root {
+  --clr-1: #052b2f;
+  --clr-2: #073438;
+  --clr-3: #0d71bd;
+  --clr-4: #2d6e8f;
+  --clr-5: #15c115;
+}
 
 .skill-card {
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  */
+  position: relative;
+  box-sizing: border-box;
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
   width: calc(100% / 7 - 40px); /* Ensure the cards fit within the container */
-  box-sizing: border-box;
-  transition: transform 0.3s, box-shadow 0.3s;
+  height: 15vh;
+  aspect-ratio: 1 / 1.5;
+  background: var(--clr-1);
+  border-radius: 0.5rem;
+
   position: relative;
-  overflow: hidden;
 }
 
-.skill-card::before {
-  content: '';
+.skill-card::before,
+.skill-card::after{
+  content: "";
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, #fcfcfc, #212120, #ffffff, #000000);
-  background-size: 400% 400%;
-  border-radius: 12px;
+  inset: -0.5rem;
   z-index: -1;
-  animation: glow-border 3s infinite linear;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-4),
+    var(--clr-3)
+  );
+  border-radius: inherit;
+  animation: rotation 30s linear infinite;
+  
 }
 
+.skill-card::after {
+  filter: blur(3.5rem);
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
 @keyframes glow-border {
   0% {
     background-position: 0% 50%;
@@ -367,6 +403,4 @@ button:last-of-type {
 }
 
 .skill-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
+} 
