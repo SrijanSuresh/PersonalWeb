@@ -75,7 +75,7 @@ function App() {
 
                       <span className="resume-section-title">Education</span><br />
                       {/* <tab style={{ paddingLeft: '100px',fontSize:'30px' }}>University of Illinois at Chicago<br/></tab> */}
-                      <img src={uicl} alt='uiclogo' height={10}/><br/>
+                      <img src={uicl} alt='uiclogo' style={{ width: '250px', height: '250px' }} />
                       <span className="resume-section-title">Skills</span><br />
                       <div className="skills-container">
                         <SkillsSection />
