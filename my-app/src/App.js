@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { DiCode } from "react-icons/di";
 import uicl from "./explogo/uicl.png"
+import act from "./explogo/ACT.png"
 import './App.css';
 import SkillsSection from './skillCard'; // Adjust the import path accordingly
 
@@ -81,6 +82,7 @@ function App() {
                         <SkillsSection />
                       </div>
                     <span className="resume-section-title">Work Experience</span><br />
+                    <img src={act} alt='uiclogo' style={{ width: '250px', height: '175px' }} />
                       <div className = 'resume-subtitle'>      ACT Software Engineer Intern, Quality Assurance Engineer<br />
                       <tab>         </tab>Iowa City, IA June 2022 – August 2022<br /></div>
                       

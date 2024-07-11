@@ -8,7 +8,7 @@ const skills = [
   { name: 'CSS', icon: <DiCss3 size="3em" color="#1572b6" /> },
   { name: 'Python', icon: <DiPython size="3em" color="#306998" /> },
   { name: 'Java', icon: <DiJava size="3em" color="#b07219" /> },
-  { name: 'PostgreSQL', icon: <DiPostgresql size="3em" color="#336791" /> },
+  { name: 'Postgres', icon: <DiPostgresql size="3em" color="#336791" /> },
   { name: 'MySQL', icon: <DiMysql size="3em" color="#4479a1" /> },
   { name: 'React', icon: <DiReact size="3em" color="#61dafb" /> },
   { name: 'Node.js', icon: <DiNodejs size="3em" color="#339933" /> },
