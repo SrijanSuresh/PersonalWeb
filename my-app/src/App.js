@@ -65,11 +65,10 @@ function App() {
 
                   </div>
                   <div className="icon-container">
-                    <DiCode size="8em" color="#ffffff" />
-                    <GiArtificialIntelligence size="3.5em" color="#ffffff" />
-                    <FaBrain size="3.5em" color="#ffffff" />
+                    <DiCode size="6em" color="#ffffff" />
+                    <FaBrain size="3em" color="#ffffff" />
                     <FaCloud size="3.5em" color="#ffffff" />
-                    <FaDatabase size="3.5em" color="#ffffff" />
+                    <FaDatabase size="3em" color="#ffffff" />
                   </div>
 
               </div>
@@ -85,7 +84,7 @@ function App() {
 
                       <span className="resume-section-title">Education</span><br />
                       {/* <tab style={{ paddingLeft: '100px',fontSize:'30px' }}>University of Illinois at Chicago<br/></tab> */}
-                      <img src={uicl} alt='uiclogo' style={{ width: '250px', height: '250px' }} />
+                      <img src={uicl} alt='uiclogo' style={{ width: '200px', height: '200px' }} />
                       <span className="resume-section-title">Skills</span><br />
                       <div className="skills-container">
                         <SkillsSection />
@@ -95,37 +94,27 @@ function App() {
                       <div className = 'resume-subtitle'>      ACT Software Engineer Intern, Quality Assurance Engineer<br />
                       <tab>         </tab>Iowa City, IA June 2022 – August 2022<br /></div>
                       
-                      <tab>         </tab>• Redesigned the test Score admin page UI/UX and backend, restructuring data accuracy by 25% and decreased
-                      <br /><tab>           </tab>administrative processing time.<br />
-                      <tab>         </tab>• Utilized Tableau to create interactive and visually appealing dashboards to analyze test score data, identify
-                      <br /><tab>           </tab>trends, and present insights to stakeholders.<br />
-                      <tab>         </tab>• Refined and executed robust test automation using PyTest.<br />
-                      <tab>         </tab>• Launched Tableau to monitor test process performance such as test execution times, defect resolution rates,
-                      and <br /><tab>           </tab>test coverage metrics to optimize efficiency and effectiveness.<br /><br />
+                      <tab>         </tab> I collaborated with other interns and redesigned the test Score admin page UI/UX and backend.<br />
+                      <tab>         </tab> We used Tableau to use the data and create interactive and visually appealing dashboards to analyze test score data.<br /><br />
 
                     <span className="resume-section-title">Personal Projects</span><br />
                       <div className='resume-subtitle'>     CarConnect (April 2024)<br /></div>
-                      <tab>         </tab>• Computed a web application that allows users to connect rides with other users in a car share.<br />
-                      <tab>         </tab>• Performed Dijkstra’s shortest route algorithm to find nearest user client to connect car, improving efficiency
-                      <br /><tab>           </tab>by approximately 40%.<br />
-                      <tab>         </tab>• Designed and implemented a React-based front-end UI/UX for dynamic client-side rendering.<br />
-                      <tab>         </tab>• Configured Node/Express server backend to manage routing and set up PostgreSQL to store user address
-                      and details in <br /><tab>           </tab>database.<br />
-                      <tab>         </tab>• Set up a NoSQL Google Firebase to handle user authentication.<br /><br />
+                      <tab>         </tab>I computed a web application using react and JS that allows users to connect rides with other users in a car share,<br />
+                      <tab>         </tab> and then performed Dijkstra’s shortest route algorithm to find nearest user client to connect car.<br />
+                      <tab>         </tab>  I also Integrated Google Maps API/Leaflet for accurate location tracking and optimized route planning for users.<nr />
+                      <tab>         </tab> Finally I configured Node/Express routing and set up PostgreSQL to store user address, firebase to authentication<br />
+                      <tab>         </tab> set up a NoSQL Google Firebase to handle user authentication.<br /><br />
+
 
                       <div className='resume-subtitle'>     SpaceRides (February 2024)<br /></div>
-                      <tab>         </tab>• Developed a robust carpooling website in collaboration with 4 people in 24 hours.<br />
-                      <tab>         </tab>• Integrated Google Maps API/Leaflet for accurate location tracking and optimized route planning for users.<br />
-                      <tab>         </tab>• Programmed site using HTML, CSS, JavaScript and integrated REST API to retrieve user information
-                      and process <br /><tab>           </tab>carpooling requests.<br />
-                      <tab>         </tab>• Utilized PHP backend to handle user authentication, data storage, and interaction with the REST API,
-                      to ensure <br /><tab>           </tab>seamless functionality and security of carpooling site.<br /><br />
+                      <tab>         </tab>I developed a robust carpooling website in collaboration with 4 people in 24 hours for hackathon.<br />
+                      <tab>         </tab>We programmed site using HTML, CSS, JavaScript and integrated REST API to retrieve user information and process <br />
+                      <tab>           </tab>carpooling requests.We used PHP backend to handle user authentication, data storage, and interaction with the REST API.<br /><br />
 
                       <div className='resume-subtitle'>     Search Algorithm (January 2024)<br /></div>
-                      <tab>         </tab>• Programmed a data scraping search algorithm using C++, with several built-in class functions.<br />
-                      <tab>         </tab>• Created several test suites using Google Test Suite and increased efficiency by identifying slow searches.<br />
-                      <tab>         </tab>• Developed algorithms to remove tokens, filter, and find query matches on 90+ tested articles.<br />
-                      <tab>         </tab>• Analyzed key metrics such as precision, recall, and F1 score to assess search algorithm effectiveness.<br />
+                      <tab>         </tab>I Programmed a data scraping search algorithm using C++, with several built-in class functions.<br />
+                      <tab>         </tab>I created several test suites using Google Test Suite and increased efficiency by identifying slow searches, and <br />
+                      <tab>         </tab>developed algorithms to remove tokens, filter, and find query matches on 90+ tested articles.<br />
                       </p>
                     </div>
                  </div>
