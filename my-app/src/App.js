@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { DiCode } from "react-icons/di";
 import { FaBrain, FaCloud, FaDatabase } from "react-icons/fa";
-import { GiArtificialIntelligence } from "react-icons/gi";
 import uicl from "./explogo/uicl.png"
 import act from "./explogo/ACT.png"
 import './App.css';
@@ -130,6 +129,7 @@ function App() {
             <div className="project-card">
           <h2>CarConnect</h2>
           <p>
+          <br/><br/>
             A web application that allows users to connect rides with other users in a car share. Utilizes Dijkstra’s shortest route algorithm to find the nearest user client, improving efficiency by approximately 40%.
           </p>
           <a href="https://github.com/SrijanSuresh/CarpoolProtoype-CarConnect" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
@@ -137,6 +137,7 @@ function App() {
         <div className="project-card">
           <h2>SpaceRides</h2>
           <p>
+          <br/><br/>
             A robust carpooling website developed in collaboration with 4 people in 24 hours. Integrated Google Maps API/Leaflet for accurate location tracking and optimized route planning for users.
           </p>
           <a href="https://github.com/sripadsirik/spark_commute" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
@@ -144,6 +145,7 @@ function App() {
         <div className="project-card">
           <h2>Search Algorithm</h2>
           <p>
+          <br/><br/><br/><br/>
             A data scraping search algorithm programmed in C++, with several built-in class functions. Created several test suites using Google Test Suite and increased efficiency by identifying slow searches.
           </p>
           <a href="https://github.com/SrijanSuresh/SearchAlgorithm" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
