@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { DiCode } from "react-icons/di";
+import { FaBrain, FaCloud, FaDatabase } from "react-icons/fa";
+import { GiArtificialIntelligence } from "react-icons/gi";
 import uicl from "./explogo/uicl.png"
 import act from "./explogo/ACT.png"
 import './App.css';
@@ -62,7 +64,14 @@ function App() {
                     I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
 
                   </div>
-                  <DiCode size="8em" color="#ffffff" />
+                  <div className="icon-container">
+                    <DiCode size="8em" color="#ffffff" />
+                    <GiArtificialIntelligence size="3.5em" color="#ffffff" />
+                    <FaBrain size="3.5em" color="#ffffff" />
+                    <FaCloud size="3.5em" color="#ffffff" />
+                    <FaDatabase size="3.5em" color="#ffffff" />
+                  </div>
+
               </div>
               <div className="resume-section">
                 <div className="resume-tile">DIGITAL RESUME</div>
@@ -134,14 +143,14 @@ function App() {
           <p>
             A web application that allows users to connect rides with other users in a car share. Utilizes Dijkstra’s shortest route algorithm to find the nearest user client, improving efficiency by approximately 40%.
           </p>
-          <a href="https://github.com/SrijanSuresh/CarConnect" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          <a href="https://github.com/SrijanSuresh/CarpoolProtoype-CarConnect" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
         </div>
         <div className="project-card">
           <h2>SpaceRides</h2>
           <p>
             A robust carpooling website developed in collaboration with 4 people in 24 hours. Integrated Google Maps API/Leaflet for accurate location tracking and optimized route planning for users.
           </p>
-          <a href="https://github.com/SrijanSuresh/SpaceRides" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          <a href="https://github.com/sripadsirik/spark_commute" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
         </div>
         <div className="project-card">
           <h2>Search Algorithm</h2>

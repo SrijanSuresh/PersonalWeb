@@ -293,6 +293,26 @@ button:last-of-type {
 }
 
 /*3D hover card*/
+.icon-container {
+  display: flex;
+  justify-content: space-around; /* Adjust this to change spacing between icons */
+  align-items: center;
+  margin-top: 20px;
+  animation: slideIn 1s forwards;
+}
+
+.icon-container .icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.icon-container .icon-item p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
 
 /* .skills-container {
   display: flex;
