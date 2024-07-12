@@ -3,6 +3,7 @@ import { DiCode } from "react-icons/di";
 import { FaBrain, FaCloud, FaDatabase } from "react-icons/fa";
 import uicl from "./explogo/uicl.png"
 import act from "./explogo/ACT.png"
+import space from "./explogo/space.png"
 import './App.css';
 import SkillsSection from './skillCard'; // Adjust the import path accordingly
 
@@ -124,34 +125,34 @@ function App() {
         <div className="projects-section">
           <button className="back-button" onClick={() => setView('home')}>Back</button>
           <div className="projects-tile">Projects</div>
-          <p className="projects-content">
+          <div className="projects-content">
             {/* Add your project content here */}
             <div className="project-card">
-          <h2>CarConnect</h2>
-          <p>
-          <br/><br/>
-            A web application that allows users to connect rides with other users in a car share. Utilizes Dijkstra’s shortest route algorithm to find the nearest user client, improving efficiency by approximately 40%.
-          </p>
-          <a href="https://github.com/SrijanSuresh/CarpoolProtoype-CarConnect" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-        </div>
-        <div className="project-card">
-          <h2>SpaceRides</h2>
-          <p>
-          <br/><br/>
-            A robust carpooling website developed in collaboration with 4 people in 24 hours. Integrated Google Maps API/Leaflet for accurate location tracking and optimized route planning for users.
-          </p>
-          <a href="https://github.com/sripadsirik/spark_commute" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-        </div>
-        <div className="project-card">
-          <h2>Search Algorithm</h2>
-          <p>
-          <br/><br/><br/><br/>
-            A data scraping search algorithm programmed in C++, with several built-in class functions. Created several test suites using Google Test Suite and increased efficiency by identifying slow searches.
-          </p>
-          <a href="https://github.com/SrijanSuresh/SearchAlgorithm" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-        </div>
+              <div className='project-title'>CarConnect<br/><br/><br/></div>
+              <div className='project-para'>
+                A web application that allows users to connect rides with other users in a car share. Utilizes Dijkstra’s shortest route algorithm to find the nearest user client, improving efficiency by approximately 40%.
+                <br/><br/><br/><br/>
+                <button onClick={() => window.location.href = "https://github.com/SrijanSuresh/CarpoolProtoype-CarConnect" }>GitHub Repository</button>
+              </div>
+           </div>
+            <div className="project-card">
+              <div className='project-title'>SpaceRides<br/><br/><img src={space} alt='space' style={{ width: '400px', height: '200px' }} /></div>
+              <div className='project-para'>
+                A robust carpooling website developed in collaboration with 4 people in 24 hours. Integrated Google Maps API/Leaflet for accurate location tracking and optimized route planning for users.
+                <br/><br/><br/><br/><br/><br/>
+                <button onClick={() => window.location.href ="https://github.com/sripadsirik/spark_commute"}>GitHub Repository</button>
+              </div>
+            </div>
+            <div className="project-card">
+              <div className='project-title'>Search Algorithm</div>
+              <div className='project-para'>
+                A data scraping search algorithm programmed in C++, with several built-in class functions. Created several test suites using Google Test Suite and increased efficiency by identifying slow searches.
+                <br/><br/><br/><br/>
+                <button onClick={() => window.location.href ="https://github.com/SrijanSuresh/SearchAlgorithm"}>GitHub Repository</button>
+              </div>
+            </div>
           
-          </p>
+          </div>
         </div>
       )}
     </div>
