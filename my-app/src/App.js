@@ -3,7 +3,8 @@ import { DiCode } from "react-icons/di";
 import { FaBrain, FaCloud, FaDatabase } from "react-icons/fa";
 import uicl from "./explogo/uicl.png"
 import act from "./explogo/ACT.png"
-import space from "./explogo/space.png"
+import backgr from "./explogo/backgr.jpg"
+//import pfp from "./explogo/pfp.png"
 import './App.css';
 import SkillsSection from './skillCard'; // Adjust the import path accordingly
 
@@ -28,7 +29,15 @@ function App() {
   return (
     <div className="App">
       {view === 'home' && (
-        <header className="App-header">
+        <header className="App-header"
+        style={{ 
+          backgroundImage: `url(${backgr})`, 
+          backgroundSize: 'cover', // Ensure the image covers the whole area
+          backgroundPosition: 'center', // Center the image
+          height: '100vh', // Set a height for the background
+          color: '#fff', // Set text color to ensure readability
+        }}
+>
           <div className="custom-name">
             Srijan Suresh
           </div>
@@ -64,6 +73,7 @@ function App() {
                     I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
 
                   </div>
+
                   <div className="icon-container">
                     <DiCode size="6em" color="#ffffff" />
                     <FaBrain size="3em" color="#ffffff" />
@@ -136,7 +146,7 @@ function App() {
               </div>
            </div>
             <div className="project-card">
-              <div className='project-title'>SpaceRides<br/><br/><img src={space} alt='space' style={{ width: '400px', height: '200px' }} /></div>
+              <div className='project-title'>SpaceRides<br/><br /></div>
               <div className='project-para'>
                 A robust carpooling website developed in collaboration with 4 people in 24 hours. Integrated Google Maps API/Leaflet for accurate location tracking and optimized route planning for users.
                 <br/><br/><br/><br/><br/><br/>
@@ -144,7 +154,7 @@ function App() {
               </div>
             </div>
             <div className="project-card">
-              <div className='project-title'>Search Algorithm</div>
+              <div className='project-title'>Search <br></br>Algorithm</div>
               <div className='project-para'>
                 A data scraping search algorithm programmed in C++, with several built-in class functions. Created several test suites using Google Test Suite and increased efficiency by identifying slow searches.
                 <br/><br/><br/><br/>
