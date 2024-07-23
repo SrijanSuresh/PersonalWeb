@@ -4,6 +4,7 @@ import { FaBrain, FaCloud, FaDatabase } from "react-icons/fa";
 import uicl from "./explogo/uicl.png"
 import act from "./explogo/ACT.png"
 import backgr from "./explogo/backgr.jpg"
+
 //import pfp from "./explogo/pfp.png"
 import './App.css';
 import SkillsSection from './skillCard'; // Adjust the import path accordingly
@@ -25,6 +26,7 @@ function App() {
       document.head.removeChild(script);
     };
   }, []);
+  
 
   return (
     <div className="App">
