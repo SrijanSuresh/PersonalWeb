@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { DiCode } from "react-icons/di";
 import { FaBrain, FaCloud, FaDatabase,FaGithub,FaLinkedin } from "react-icons/fa";
 import uicl from "./explogo/uicl.png"
 import act from "./explogo/ACT.png"
 import backgr from "./explogo/backgr.jpg"
-import { BrowserRouter as Router, Route, Routes, Link,useNavigate  } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link  } from 'react-router-dom';
+
+
 
 //import pfp from "./explogo/pfp.png"
 import './App.css';
