@@ -55,37 +55,50 @@ body, html {
   margin-top: 20px; 
   animation: slideIn 1s forwards;
 }
-
-/*About me page content below*/
-
-.about-me {
-  font-family: 'Fira Code', monospace;
-  font-size: 1.15em; /* Adjust as needed */
-  color: #ffffff;
-  animation: slideIn 1s forwards; 
-
-  -webkit-background-clip: text;
-  letter-spacing: 0.1em;
-  text-shadow: 0 0 5px rgba(75, 20, 213, 0.999), 
-               0 0 5px rgba(37, 0, 247, 0.5), 
-               0 0 15px rgba(28, 28, 202, 0.912);
-  max-width: 900px;
-  line-height: 1.5;
-  text-align: left;
-  margin-left: 500px;
-  margin-bottom: 125px;
-  padding: 0 50px;
+.pause {
+  animation-play-state: paused;
 }
+/*About me page content below*/
+/* Container to hold the entire crawl effect */
+.crawl-text {
+  transform-origin: 50% 50%;
+  animation: crawl 70s linear infinite; /* Set the duration to 2 seconds and loop infinitely */
+  width: 850px;
+  overflow: auto; /* Enable scrolling */
+}
+
+.star-wars-intro {
+  perspective: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-color: black;
+  font-size: 26px;
+  position: relative;
+}
+
+@keyframes crawl {
+  0% {
+    transform: rotateX(20deg) translateY(100%);
+  }
+  100% {
+    transform: rotateX(20deg) translateY(-3000px);
+  }
+}
+
 
 .about-tile {
   font-family: 'Fira Code', monospace;
   font-size: 3.5em; /* Adjust as needed */
   color: #ffffff;
-  animation: slideIn 1s forwards;  
   margin-top: 20px;
   margin: 10px ;
   text-align: center;
-  background: radial-gradient(circle, rgb(255, 47, 0) 0%, rgb(255, 0, 0) 100%);
+  background: radial-gradient(circle, rgb(255, 238, 0) 0%, rgb(217, 255, 0) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 0.1em;

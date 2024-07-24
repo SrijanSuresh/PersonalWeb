@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { DiCode } from "react-icons/di";
 import { FaBrain, FaCloud, FaDatabase,FaGithub,FaLinkedin } from "react-icons/fa";
 import uicl from "./explogo/uicl.png"
@@ -57,6 +57,20 @@ function Home() {
   );
 }
 function About() {
+  const crawlTextRef = useRef(null);
+
+  useEffect(() => {
+    // Stop the animation after 3 seconds
+    const timer = setTimeout(() => {
+      if (crawlTextRef.current) {
+        crawlTextRef.current.style.animation = 'none'; // Stop the animation
+      }
+    }, 25000);
+
+    // Cleanup timeout on component unmount
+    return () => clearTimeout(timer);
+  }, []);
+
   return(
   <div className="about-section">
               
@@ -64,17 +78,19 @@ function About() {
   <Link to="/home">
      <button>Back</button>
      </Link>
-      <div className="about-me">
-        <div className="about-tile">About Me</div>
-        Hello! I'm Srijan Suresh, a tech enthusiast who also dabbles in the art of vanquishing virtual dragons and cowboys.
-        When I'm not busy exploring the lands of Elden Ring or Red Dead Redemption 2, I enjoy kicking a soccer ball around, rooting for the golden days of FC Barcelona and Manchester United.<br></br><br></br>
+    <div className="star-wars-intro">
+      <div className="crawl-text" ref={crawlTextRef}>
+      
+          <div className="about-tile">About Me</div>
+          Hello! I'm Srijan Suresh, a tech enthusiast who also dabbles in the art of vanquishing virtual dragons and cowboys.
+          When I'm not busy exploring the lands of Elden Ring or Red Dead Redemption 2, I enjoy kicking a soccer ball around, rooting for the golden days of FC Barcelona and Manchester United.
+          On the strategic side,I’m a 1700-rated chess player, regularly battling on the 64 squares.
+          I’ve interned at ACT, where I wrangled student test score data with Tableau and gave the website a fresh new look.
+          Currently, my brain is buzzing with personal projects like finding carpool buddies using Dijkstra’s algorithm and predicting stock prices with a touch of Monte Carlo magic.
+          I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
     
-        On the strategic side, I’m a 1700-rated chess player, regularly battling on the 64 squares.
-        I’ve interned at ACT, where I wrangled student test score data with Tableau and gave the website a fresh new look.
-        Currently, my brain is buzzing with personal projects like finding carpool buddies using Dijkstra’s algorithm and predicting stock prices with a touch of Monte Carlo magic.
-        I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
-
       </div>
+    </div>
 
       <div className="icon-container">
         <DiCode size="6em" color="#ffffff" />
@@ -100,15 +116,15 @@ function About() {
             Phone: 319-259-2055<br />
             Email: srijansuresh04@gmail.com<br /><br />
 
-          <span className="resume-section-title">Education</span><br />
+          <span className="resume-section-title">Education</span><br /><br></br>
           {/* <tab style={{ paddingLeft: '100px',fontSize:'30px' }}>University of Illinois at Chicago<br/></tab> */}
-          <img src={uicl} alt='uiclogo' style={{ width: '200px', height: '200px' }} />
+          <img src={uicl} alt='uiclogo' style={{ width: '200px', height: '200px' }} /><br></br><br></br>
           <span className="resume-section-title">Skills</span><br />
-          <div className="skills-container">
+          <div className="skills-container"><br></br>
             <SkillsSection />
-          </div>
-        <span className="resume-section-title">Work Experience</span><br />
-        <img src={act} alt='uiclogo' style={{ width: '250px', height: '175px' }} />
+          </div><br></br><br></br><br></br>
+        <span className="resume-section-title">Work Experience</span><br></br><br></br>
+        <img src={act} alt='uiclogo' style={{ width: '250px', height: '175px' }} /><br></br>
           <div className = 'resume-subtitle'>      ACT Software Engineer Intern, Quality Assurance Engineer<br />
           <tab>         </tab>Iowa City, IA June 2022 – August 2022<br /></div>
           
@@ -177,4 +193,6 @@ function Project() {
 </div>
 );
 }
+
+
 export default App;
