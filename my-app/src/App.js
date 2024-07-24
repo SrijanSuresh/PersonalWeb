@@ -92,18 +92,20 @@ function About() {
       </div>
     </div>
 
-      <div className="icon-container">
-        <DiCode size="6em" color="#ffffff" />
-        <FaBrain size="3em" color="#ffffff" />
-        <FaCloud size="3.5em" color="#ffffff" />
-        <FaDatabase size="3em" color="#ffffff" />
-        <a href="https://github.com/SrijanSuresh" target="_blank" rel="noopener noreferrer">
-            <FaGithub size="3em" color="#ffffff" />
-          </a>
-          <a href="https://www.linkedin.com/in/srijan-suresh" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size="3em" color="#ffffff" />
-          </a>
-      </div>
+    <div className="icon-container">
+    <DiCode className="text-white hover:text-blue-400 transition duration-300 ease-in-out" size="6em" />
+  <FaBrain className="text-white hover:text-yellow-400 transition duration-300 ease-in-out" size="3em" />
+  <FaCloud className="text-white hover:text-blue-300 transition duration-300 ease-in-out" size="3.5em" />
+  <FaDatabase className="text-white hover:text-green-400 transition duration-300 ease-in-out" size="3em" />
+  <a href="https://github.com/SrijanSuresh" target="_blank" rel="noopener noreferrer">
+    <FaGithub className="text-white hover:text-gray-400 transition duration-300 ease-in-out" size="3em" />
+  </a>
+  <a href="https://www.linkedin.com/in/srijan-suresh" target="_blank" rel="noopener noreferrer">
+    <FaLinkedin className="text-white hover:text-blue-600 transition duration-300 ease-in-out" size="3em" />
+  </a>
+
+    </div>
+
 
   </div>
   <div className="resume-section">
