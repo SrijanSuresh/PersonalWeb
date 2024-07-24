@@ -90,23 +90,23 @@ function About() {
           I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
     
       </div>
+      <div className="icon-container">
+      <DiCode className="text-white hover:text-blue-400 transition duration-300 ease-in-out" size="6em" />
+      <FaBrain className="text-white hover:text-yellow-400 transition duration-300 ease-in-out" size="3em" />
+      <FaCloud className="text-white hover:text-blue-300 transition duration-300 ease-in-out" size="3.5em" />
+      <FaDatabase className="text-white hover:text-green-400 transition duration-300 ease-in-out" size="3em" />
+      <a href="https://github.com/SrijanSuresh" target="_blank" rel="noopener noreferrer">
+        <FaGithub className="text-white hover:text-gray-400 transition duration-300 ease-in-out" size="3em" />
+      </a>
+      <a href="https://www.linkedin.com/in/srijan-suresh" target="_blank" rel="noopener noreferrer">
+        <FaLinkedin className="text-white hover:text-blue-600 transition duration-300 ease-in-out" size="3em" />
+      </a>
     </div>
-
-    <div className="icon-container">
-    <DiCode className="text-white hover:text-blue-400 transition duration-300 ease-in-out" size="6em" />
-  <FaBrain className="text-white hover:text-yellow-400 transition duration-300 ease-in-out" size="3em" />
-  <FaCloud className="text-white hover:text-blue-300 transition duration-300 ease-in-out" size="3.5em" />
-  <FaDatabase className="text-white hover:text-green-400 transition duration-300 ease-in-out" size="3em" />
-  <a href="https://github.com/SrijanSuresh" target="_blank" rel="noopener noreferrer">
-    <FaGithub className="text-white hover:text-gray-400 transition duration-300 ease-in-out" size="3em" />
-  </a>
-  <a href="https://www.linkedin.com/in/srijan-suresh" target="_blank" rel="noopener noreferrer">
-    <FaLinkedin className="text-white hover:text-blue-600 transition duration-300 ease-in-out" size="3em" />
-  </a>
-
     </div>
+    <br></br>
 
 
+    <br></br>    <br></br>
   </div>
   <div className="resume-section">
     <div className="resume-tile">DIGITAL RESUME</div>
