@@ -20,7 +20,7 @@ const skills = [
 ];
 
 const SkillCard = ({ skill }) => (
-  <div className="skill-card">
+  <div className="skill-card hover:shadow-lg hover:bg-white hover:text-black ">
     <div className="flex items-center justify-center mb-2">
       {skill.icon}
     </div>
@@ -31,7 +31,7 @@ const SkillCard = ({ skill }) => (
 );
 
 const SkillsSection = () => (
-  <div className="skills-container">
+  <div className="skills-container grid grid-cols-2 md:grid-cols-4 gap-6 p-6">
     {skills.map((skill, index) => (
       <SkillCard key={index} skill={skill} />
     ))}

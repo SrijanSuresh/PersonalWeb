@@ -13,6 +13,7 @@ import './App.css';
 import SkillsSection from './skillCard'; // Adjust the import path accordingly
 
 function App() {
+ 
   return (
     <Router>
       <div className="App">
@@ -22,6 +23,8 @@ function App() {
           <Route path="/projects" element={<Project />} />
           <Route path="/" element={<Home />} />
         </Routes>
+
+
       </div>
     </Router>
   );
@@ -58,7 +61,6 @@ function Home() {
 }
 function About() {
   const crawlTextRef = useRef(null);
-
   useEffect(() => {
     // Stop the animation after 3 seconds
     const timer = setTimeout(() => {
@@ -72,42 +74,46 @@ function About() {
   }, []);
 
   return(
-  <div className="about-section">
-              
-  <div className="about-text">
-  <Link to="/home">
-     <button>Back</button>
-     </Link>
-    <div className="star-wars-intro">
-      <div className="crawl-text" ref={crawlTextRef}>
+  <div className='about-me-section' 
+    style={{
+      backgroundImage: `url(${backgr})`,
+      backgroundSize: 'cover', // Ensure the image covers the whole area
+      backgroundPosition: 'center', // Center the image
+    }}>
+
+        <div className="star-wars-intro"
+              style={{
+                backgroundImage: `url(${backgr})`,
+                backgroundSize: 'cover', // Ensure the image covers the whole area
+                backgroundPosition: 'center', // Center the image
+              }}>
+      <Link to="/home" className="icon-container flex flex-col items-center space-y-12 fixed left-0">
+      <button>Back</button>
+      </Link>
+           <div className="crawl-text" ref={crawlTextRef}>
+        
+            <div className="about-tile">About Me</div>
+            Hello! I'm Srijan Suresh, a tech enthusiast who also dabbles in the art of vanquishing virtual dragons and cowboys.
+            When I'm not busy exploring the lands of Elden Ring or Red Dead Redemption 2, I enjoy kicking a soccer ball around, rooting for the golden days of FC Barcelona and Manchester United.
+            On the strategic side,I’m a 1700-rated chess player, regularly battling on the 64 squares.
+            I’ve interned at ACT, where I wrangled student test score data with Tableau and gave the website a fresh new look.
+            Currently, my brain is buzzing with personal projects like finding carpool buddies using Dijkstra’s algorithm and predicting stock prices with a touch of Monte Carlo magic.
+            I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
       
-          <div className="about-tile">About Me</div>
-          Hello! I'm Srijan Suresh, a tech enthusiast who also dabbles in the art of vanquishing virtual dragons and cowboys.
-          When I'm not busy exploring the lands of Elden Ring or Red Dead Redemption 2, I enjoy kicking a soccer ball around, rooting for the golden days of FC Barcelona and Manchester United.
-          On the strategic side,I’m a 1700-rated chess player, regularly battling on the 64 squares.
-          I’ve interned at ACT, where I wrangled student test score data with Tableau and gave the website a fresh new look.
-          Currently, my brain is buzzing with personal projects like finding carpool buddies using Dijkstra’s algorithm and predicting stock prices with a touch of Monte Carlo magic.
-          I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
-    
-      </div>
-      <div className="icon-container flex flex-col items-center space-y-12 fixed right-0">
-        <DiCode className="text-white hover:text-blue-400 transition duration-300 ease-in-out" size="6em" />
-        <FaBrain className="text-white hover:text-yellow-400 transition duration-300 ease-in-out" size="3em" />
-        <FaCloud className="text-white hover:text-blue-300 transition duration-300 ease-in-out" size="3.5em" />
-        <FaDatabase className="text-white hover:text-green-400 transition duration-300 ease-in-out" size="3em" />
-        <a href="https://github.com/SrijanSuresh" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="text-white hover:text-gray-400 transition duration-300 ease-in-out" size="3em" />
-        </a>
-        <a href="https://www.linkedin.com/in/srijan-suresh" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="text-white hover:text-blue-600 transition duration-300 ease-in-out" size="3em" />
-        </a>
-    </div>
+        </div>
+        <div className="icon-container flex flex-col items-center space-y-12 fixed right-0">
+          <DiCode className="text-white hover:text-blue-400 transition duration-300 ease-in-out" size="6em" />
+          <FaBrain className="text-white hover:text-yellow-400 transition duration-300 ease-in-out" size="3em" />
+          <FaCloud className="text-white hover:text-blue-300 transition duration-300 ease-in-out" size="3.5em" />
+          <FaDatabase className="text-white hover:text-green-400 transition duration-300 ease-in-out" size="3em" />
+          <a href="https://github.com/SrijanSuresh" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-white hover:text-red-400 transition duration-300 ease-in-out" size="3em" />
+          </a>
+          <a href="https://www.linkedin.com/in/srijan-suresh" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-white hover:text-blue-600 transition duration-300 ease-in-out" size="3em" />
+          </a>
+        </div>
 
-    </div>
-    <br></br>
-
-
-    <br></br>    <br></br>
   </div>
   <div className="resume-section">
     <div className="resume-tile">DIGITAL RESUME</div>
@@ -155,6 +161,7 @@ function About() {
           </p>
         </div>
      </div>
+     
  </div>
   );
 }
