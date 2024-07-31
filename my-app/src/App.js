@@ -1,9 +1,10 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { DiCode } from "react-icons/di";
 import { FaBrain, FaCloud, FaDatabase,FaGithub,FaLinkedin } from "react-icons/fa";
 import uicl from "./explogo/uicl.png"
 import act from "./explogo/ACT.png"
 import backgr from "./explogo/backgr.jpg"
+import pdf from "./explogo/Srijan_Suresh_resume.pdf"
 import { BrowserRouter as Router, Route, Routes, Link  } from 'react-router-dom';
 
 
@@ -60,14 +61,24 @@ function Home() {
   );
 }
 function About() {
+  const resumeSectionRef = useRef(null);
+
+  const scrollToResume = () => {
+    if (resumeSectionRef.current) {
+      resumeSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const crawlTextRef = useRef(null);
+  const [showNewText, setShowNewText] = useState(false);
+
   useEffect(() => {
-    // Stop the animation after 3 seconds
+    // Stop the animation after 25 seconds and show new text
     const timer = setTimeout(() => {
       if (crawlTextRef.current) {
         crawlTextRef.current.style.animation = 'none'; // Stop the animation
       }
-    }, 25000);
+      setShowNewText(true); // Show the new text
+    }, 35000);
 
     // Cleanup timeout on component unmount
     return () => clearTimeout(timer);
@@ -90,17 +101,37 @@ function About() {
       <Link to="/home" className="icon-container flex flex-col items-center space-y-12 fixed left-0">
       <button>Back</button>
       </Link>
-           <div className="crawl-text" ref={crawlTextRef}>
+      {showNewText ? (
+        <div className="After-Intro">
+          <div className="about-tile-af">About Me</div>
+            <div className='normal-about'>
+              Hello there, I am Srijan Suresh, a current student at UIC, former Intern at ACT.
+              I love problem solving and coding, and I am always looking for new challenges to tackle.
+              currently I am working on my carpooling project, CarConnect, and I am excited to see where it goes.
+              and in future I have plans to work on projects like portfolio optimzation and black-scholes model.
+            </div>
+            <br></br><br></br><br></br><br></br><br></br>
+            <Link to="#" className=" flex flex-row items-center">
+              <button  onClick={scrollToResume}>View Resume</button>
+              {/* <a href={pdf} download>
+                <button>Download Resume</button>
+              </a>             */}
+              
+            </Link>
+        </div>
+      ) : (
+
+        <div className="crawl-text" ref={crawlTextRef}>
         
             <div className="about-tile">About Me</div>
-            Hello! I'm Srijan Suresh, a tech enthusiast who also dabbles in the art of vanquishing virtual dragons and cowboys.
-            When I'm not busy exploring the lands of Elden Ring or Red Dead Redemption 2, I enjoy kicking a soccer ball around, rooting for the golden days of FC Barcelona and Manchester United.
-            On the strategic side,I’m a 1700-rated chess player, regularly battling on the 64 squares.
-            I’ve interned at ACT, where I wrangled student test score data with Tableau and gave the website a fresh new look.
-            Currently, my brain is buzzing with personal projects like finding carpool buddies using Dijkstra’s algorithm and predicting stock prices with a touch of Monte Carlo magic.
-            I’m on a quest for more knowledge and experience in the software field, ready to tackle challenges with a smile and a bit of humor. Let's code, create, and conquer!
-      
-        </div>
+            <p>A long time ago in a galaxy far, far away...</p>
+            <h3>Srijan Suresh: Tech Enthusiast and Virtual Adventurer</h3><br></br>
+            <h4>Episode IV: The Rise of the Developer</h4>
+            <p>In the vast realms of technology, a developer emerges. Srijan Suresh, a fearless tech enthusiast, embarks on epic quests to vanquish virtual dragons in <em>Elden Ring</em> and duel cowboys in <em>Red Dead Redemption 2</em>.</p>
+            <p>When not exploring these digital landscapes, Srijan can be found on the soccer field, reminiscing about the golden days of FC Barcelona and Manchester United. With a strategic mind and a 1700 chess rating, he battles fiercely on the 64 squares.</p>
+            <p>During an internship at ACT, he mastered the art of data manipulation with Tableau and rejuvenated the website's design. Now, his mind buzzes with ambitious projects: finding carpool buddies with Dijkstra's algorithm and predicting stock prices with Monte Carlo simulations.</p>
+            <p>On a relentless quest for knowledge and experience in the software field, Srijan is ready to tackle challenges with a smile and a dash of humor. Together, let us code, create, and conquer!</p>
+        </div>)}
         <div className="icon-container flex flex-col items-center space-y-12 fixed right-0">
           <DiCode className="text-white hover:text-blue-400 transition duration-300 ease-in-out" size="6em" />
           <FaBrain className="text-white hover:text-yellow-400 transition duration-300 ease-in-out" size="3em" />
@@ -115,7 +146,7 @@ function About() {
         </div>
 
   </div>
-  <div className="resume-section">
+  <div className="resume-section" ref={resumeSectionRef} >
     <div className="resume-tile">DIGITAL RESUME</div>
       <div className="resume-content">
         <p className="resume-text">
